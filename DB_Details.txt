@@ -1,0 +1,35 @@
+Database name: leavedb
+userid, password: root1234
+
+Atomatically Tables will be create when we start the spring boot application.
+
+Emp table:
+----------
+insert into leavedb.employeedetails (id, name, email, mobile, joineddate, department, leavebal, mgrid) 
+values (123456, "ChadhaManish", "CM@gmail.com", "9791960999", "01/02/2005", "BFS", 9, 1002);
+
+insert into leavedb.employeedetails (id, name, email, mobile, joineddate, department, leavebal, mgrid) 
+values (1123, "emp2", "emp2@gmail.com", "8042253413", "11/02/2006", "EDS", 7, 1002);
+
+insert into leavedb.employeedetails (id, name, email, mobile, joineddate, department, leavebal, mgrid) 
+values (1124, "emp3", "emp3@gmail.com", "6762253414", "03/05/2005", "Q&E", 7, 414100);
+
+insert into leavedb.employeedetails (id, name, email, mobile, joineddate, department, leavebal, mgrid) 
+values (414100, "PDinesh", "dineshmcamail@gmail.com", "9259156493", "02/17/2014", "IT", 15, 123456);
+
+insert into leavedb.employeedetails (id, name, email, mobile, joineddate, department, leavebal, mgrid) 
+values (1002, "emp5", "emp5@gmail.com", "8045083117", "12/07/2004", "EDS", 6, 1004);
+
+insert into leavedb.employeedetails (id, name, email, mobile, joineddate, department, leavebal, mgrid) 
+values (1003, "emp6", "emp6@gmail.com", "8045082222", "12/07/2012", "EDS", 10, 1004);
+
+Leave table:
+-----------
+insert into leavedb.leavedetails (id, empid, empname, strdate, enddate, leavetype, lvebal, mgrid, mgrcmnt, noofdays, reason, status, appliedon)
+values (1, 123456, "ChadhaManish", "2019-05-16", "2019-05-19", "SickLeave", 5, 1002, "", 3, "sick", "Pending", "2019-05-19");
+
+insert into leavedb.leavedetails (id, empid, empname, strdate, enddate, leavetype, lvebal, mgrid, mgrcmnt, noofdays, reason, status, appliedon)
+values (2, 1124, "emp3", "2019-05-10", "2019-05-13", "EarnedLeave", 7, 414100, "", 3, "vacation", "Pending", "2019-05-03");
+
+insert into leavedb.leavedetails (id, empid, empname, strdate, enddate, leavetype, lvebal, mgrid, mgrcmnt, noofdays, reason, status, appliedon)
+values (3, 414100, "PDinesh", "2019-05-20", "2019-05-21", "EarnedLeave", 8, 1003, "", 2, "comp off", "Pending", "2019-05-19");
